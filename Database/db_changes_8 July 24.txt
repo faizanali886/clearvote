@@ -1,0 +1,26 @@
+drop table tbl_county_information;
+
+CREATE TABLE `tbl_county_information` (                   
+                          `id` int(11) NOT NULL AUTO_INCREMENT,                   
+                          `zip_code` varchar(10) DEFAULT NULL,                    
+                          `county_name` varchar(200) DEFAULT NULL,                
+                          `population` varchar(10) DEFAULT NULL,                  
+                          `area` varchar(10) DEFAULT NULL,                        
+                          `active_voters` varchar(10) DEFAULT NULL,               
+                          `active_male_voters` varchar(10) DEFAULT NULL,          
+                          `active_female_voters` varchar(10) DEFAULT NULL,        
+                          `current_body_tenure` varchar(20) DEFAULT NULL,         
+                          `no_of_member` varchar(10) DEFAULT NULL,                
+                          `mayor_name` varchar(200) DEFAULT NULL,                 
+                          `mayor_bio` varchar(1000) DEFAULT NULL,                 
+                          `ruling_party_members` varchar(10) DEFAULT NULL,        
+                          `no_of_schools` varchar(10) DEFAULT NULL,               
+                          `education_president` varchar(200) DEFAULT NULL,        
+                          `public_hospitals` varchar(10) DEFAULT NULL,            
+                          `helth_commite_president` varchar(200) DEFAULT NULL,    
+                          `forthcoming_elections` text,                           
+                          `added_date` timestamp NULL DEFAULT CURRENT_TIMESTAMP,  
+                          `user_id` int(11) DEFAULT NULL,                         
+                          PRIMARY KEY (`id`)                                      
+                        );
+

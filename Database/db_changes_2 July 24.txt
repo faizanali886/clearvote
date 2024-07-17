@@ -1,0 +1,1 @@
+alter table tbl_county_information add user_id int(11);
